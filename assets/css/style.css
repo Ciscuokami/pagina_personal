@@ -9,6 +9,26 @@ body{
 header{
     text-align: center;
 }
+.header_area .main-menu .navbar{
+    padding: 0 2rem 0 5rem;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-nav{
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    margin-right: 0;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: red;
+    text-decoration: none;
+}
 .row {
     display: flex;
     flex-direction: row;
@@ -28,12 +48,12 @@ header{
     flex-direction: column;
     height: 200px;
 }
-.col-lg-6 {
+.contenedor-1 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
 }
-.col-md-12 {
+.contenedor-2 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 45%;
@@ -45,12 +65,11 @@ header{
     padding-left: 15px;
 }
 .image {
+    height: 100%;
+    margin-left: 15%;
 }
 .img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
-img {
-    vertical-align: middle;
-    border-style: none;
-}
+
