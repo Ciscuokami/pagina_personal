@@ -1,18 +1,26 @@
-@media screen and (max-width: 425px) {
-    body{
-        font-family:'Redressed', cursive;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #212529;
-        text-align: left;
-    }
-    header nav ul {
-        overflow: hidden;
-        list-style: none;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Redressed', cursive;
+    background-color: #FFFFFA;
+}
+
+@media screen and (max-width: 425px) { /*mobil*/
+    header nav {
+        width: 80%;
+        height: 100%;
+        left:-100%;
+        margin: 0%;
+        position: fixed;
+        background-color: #024959;
     }
     header nav ul li {
-        float: left;
+        display: block;
+        float: none;
+        border-bottom:1px solid rgba(255,255,255, .3)
     }
     header nav ul li a {
         color: #fff;
@@ -25,18 +33,6 @@
     }
     header nav ul li a:hover {
         background-color: #037E8C;
-    }
-    header nav {
-        width: 80%;
-        height: 100%;
-        margin: 0;
-        position: fixed;
-        background-color: #024959;
-    }
-    header nav ul li {
-        display: block;
-        float: none;
-        border-bottom: 1px solid rgba(255,255,255, .3);
     }
     .menu_bar {
         display: block;
@@ -59,58 +55,265 @@
         float: right;
         font-size: 40px;
     }
-    /* .row {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .about {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        height: 200px;
-    }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        height: 200px;
-    }
-    .contenedor-1 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .contenedor-2 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 45%;
-    }
-    .contenedor-1, .contenedor-2, .title {
-        position: relative;
+    div .image {
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .image {
+    div .contenedor-2 {
+        padding: 10px;
+    }
+    .contact_form {
+        width: 90%;
+        margin: 4%;
+        padding-left: 9px;
+        height: auto;
+        border-radius: 10px;
+        padding-top: 19px;
+        padding-bottom: 20px;
+        background-color: #037E8C;
+    }
+    input{
+        background-color: #fbfbfb;
+        width: 90%;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        background-color: #fbfbfb;
+        width: 90%;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    label{
+        display: block;
+        float: center;
+    }
+    button{
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #024959;
+        border-color: #fff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 98%;
+        cursor: pointer;
+    }
+    button p{
+        color: #fff;
+    }
+    span .obligatorio{
+        color: #fff;
+    }
+    .aviso{
+        font-size: 18px;
+        color:#fff;
+    }
+    div .formulario > h1{
+        font-size: 45px;
+        text-align: letf;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+    div .formulario > h3{
+        font-size: 25px;
+        padding-bottom: 30px;
+        color: #fff;
+    }
+    form > p{
+        font-size: 20px;
+        color: #fff;
+    }
+    .formulario ::-webkit-input-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario ::-webkit-textarea-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario input:focus{
+        outline:0;
+        border: 2px solid #750a0a;
+    }
+    .formulario textarea:focus{
+        outline:0;
+        border: 2px solid #750a0a;
+    }
+    input {
+        width: 93%;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 800px) { /*tablet*/
+    header nav {
+        width: 80%;
         height: 100%;
-        margin-left: 15%;
+        left:-100%;
+        margin: 0%;
+        position: fixed;
+        background-color: #024959;
     }
-    .img {
-        max-width: 100%;
-        height: 46%;
-    } */
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom:1px solid rgba(255,255,255, .3)
+    }
+    header nav ul li a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+    }
+    header nav ul li span {
+        margin-right: 10px;
+    }
+    header nav ul li a:hover {
+        background-color: #037E8C;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    .row {
+        display: flex;
+    }
+    div .contenedor-2 {
+        padding: 10px;
+    }
+    .contact_form {
+        width: 90%;
+        margin: 4%;
+        padding-left: 9px;
+        height: auto;
+        border-radius: 10px;
+        padding-top: 19px;
+        padding-bottom: 20px;
+        background-color: #037E8C;
+    }
+    input{
+        background-color: #fbfbfb;
+        width: 90%;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        background-color: #fbfbfb;
+        width: 90%;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    label{
+        display: block;
+        float: center;
+    }
+    button{
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #024959;
+        border-color: #fff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 98%;
+        cursor: pointer;
+    }
+    button p{
+        color: #fff;
+    }
+    span .obligatorio{
+        color: #fff;
+    }
+    .aviso{
+        font-size: 18px;
+        color:#fff;
+    }
+    div .formulario > h1{
+        font-size: 45px;
+        text-align: letf;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+    div .formulario > h3{
+        font-size: 25px;
+        padding-bottom: 30px;
+        color: #fff;
+    }
+    form > p{
+        font-size: 20px;
+        color: #fff;
+    }
+    .formulario ::-webkit-input-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario ::-webkit-textarea-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario input:focus{
+        outline:0;
+        border: 2px solid #750a0a;
+    }
+    .formulario textarea:focus{
+        outline:0;
+        border: 2px solid #750a0a;
+    }
+    input {
+        width: 93%;
+    }
+    .cv {
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 700px) and (max-width: 999px) {
-    .img {
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 801px) { /*tablet o más*/
     header {
         width: 100%;
     }
@@ -118,11 +321,129 @@
         width: 90%;
         max-width: 1000px;
         margin: 20px auto;
+        background-color: #024959;
     }
     .menu_bar {
         display: none;
     }
-    .img {
-        height: 100%;
+    header nav ul {
+        overflow: hidden;
+        list-style: none;
+    }
+    header nav ul li {
+        float: left;
+    }
+    header nav ul li a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+    }
+    header nav ul li span {
+        margin-right: 10px;
+    }
+    header nav ul li a:hover {
+        background-color: #037E8C;
+    }
+    section .about{
+        padding: 20px;
+    }
+    .row {
+        display: flex;
+    }
+    div .contenedor-2 {
+        padding: 10px;
+    }
+    .contact_form{
+        width: 460px;
+        height: auto;
+        margin: 80px auto;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-color: #037E8C;
+        padding-left: 30px;
+    }
+    input{
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #024959;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+    label{
+        display: block;
+        float: center;
+    }
+    button{
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background-color: #024959;
+        border-color: #fff;
+        border-style: solid;
+        border-radius: 10px;
+        width: 420px;
+        cursor: pointer;
+    }
+    button p{
+        color: #fff;
+    }
+    span .obligatorio{
+        color: #fff;
+    }
+    .aviso{
+        font-size: 18px;
+        color:#fff;
+    }
+    div .formulario > h1{
+        font-size: 45px;
+        text-align: letf;
+        padding-bottom: 20px;
+        color: #fff;
+    }
+    div .formulario > h3{
+        font-size: 25px;
+        padding-bottom: 30px;
+        color: #fff;
+    }
+    form > p{
+        font-size: 20px;
+        color: #fff;
+    }
+    .formulario ::-webkit-input-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario ::-webkit-textarea-placeholder {
+       color: #a8a8a8;
+    }
+    .formulario input:focus{
+        outline:0;
+        border: 2px solid #750a0a;
+    }
+    .formulario textarea:focus{
+        outline:0;
+        border: 2px solid #750a0a;
     }
 }
