@@ -116,6 +116,7 @@ body {
         border-radius: 10px;
         width: 98%;
         cursor: pointer;
+        color: #fff;
     }
     button p{
         color: #fff;
@@ -279,6 +280,7 @@ body {
         border-radius: 10px;
         width: 98%;
         cursor: pointer;
+        color: #fff;
     }
     button p{
         color: #fff;
@@ -380,6 +382,7 @@ body {
     }
     .row {
         display: flex;
+        justify-content: center;
     }
     div .contenedor-2 {
         padding: 10px;
@@ -436,6 +439,7 @@ body {
         border-radius: 10px;
         width: 420px;
         cursor: pointer;
+        color: #fff;
     }
     button p{
         color: #fff;
