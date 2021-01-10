@@ -159,6 +159,19 @@ body {
     input {
         width: 93%;
     }
+    .title-text {
+       font-size: 246%;
+    }
+    .contenedor-3 {
+        display: wrap;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .imgfoot {
+        width: 40%;
+        height: 40%;
+    }
 }
 @media screen and (min-width: 426px) and (max-width: 800px) { /*tablet*/
     header nav {
@@ -209,6 +222,7 @@ body {
     }
     .row {
         display: flex;
+        justify-content: space-between;
     }
     div .contenedor-2 {
         padding: 10px;
@@ -310,6 +324,22 @@ body {
     }
     .cv {
         width: 50%;
+    }
+    .title-text {
+        font-size: 246%;
+    }
+    h1 .title-text {
+        font-size: 50%;
+    }
+    .contenedor-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .imgfoot {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -445,5 +475,17 @@ body {
     .formulario textarea:focus{
         outline:0;
         border: 2px solid #750a0a;
+    }
+    .title-text {
+        font-size: 246%;
+    }
+    .contenedor-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgfoot {
+        width: 100px;
+        height: 100px;
     }
 }
